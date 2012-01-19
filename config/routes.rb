@@ -1,4 +1,8 @@
 Map::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :usuarios, ActiveAdmin::Devise.config
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
