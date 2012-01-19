@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  preco: 
+  categoria_id: 1
+  referencia: MyString
+
+two:
+  preco: 
+  categoria_id: 1
+  referencia: MyString
