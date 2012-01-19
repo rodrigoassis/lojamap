@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120119122841) do
+ActiveRecord::Schema.define(:version => 20120119133602) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -33,6 +33,18 @@ ActiveRecord::Schema.define(:version => 20120119122841) do
     t.datetime "updated_at"
   end
 
+  create_table "clippings", :force => true do |t|
+    t.string   "descricao"
+    t.string   "url"
+    t.string   "tipo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "imagem_file_name"
+    t.string   "imagem_content_type"
+    t.integer  "imagem_file_size"
+    t.datetime "imagem_updated_at"
+  end
+
   create_table "colecoes", :force => true do |t|
     t.string   "nome"
     t.datetime "created_at"
@@ -50,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20120119122841) do
     t.string   "imagem_content_type"
     t.integer  "imagem_file_size"
     t.datetime "imagem_updated_at"
+    t.integer  "colecao_id"
   end
 
   create_table "usuarios", :force => true do |t|

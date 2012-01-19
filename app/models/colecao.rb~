@@ -1,7 +1,5 @@
 class Colecao < ActiveRecord::Base
 
-menu :label => "Coleções"
-
 validates_presence_of :nome
 
 end
