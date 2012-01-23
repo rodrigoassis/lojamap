@@ -78,7 +78,7 @@ ActiveAdmin.setup do |config|
   # by adding them to the comments array.
   #
   # Default:
-  config.comments = false
+  #config.comments = false
 
 
   # == Controller Filters
@@ -87,6 +87,8 @@ ActiveAdmin.setup do |config|
   # Active Admin resources from here. 
   #
   # config.before_filter :do_something_awesome
+  
+  config.display_name_methods = [:nome, :name, :email, :to_s]
 
 
   # == Register Stylesheets & Javascripts

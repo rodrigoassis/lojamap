@@ -2,6 +2,8 @@ ActiveAdmin.register Colecao do
 
 menu :label => "Coleções"
 
+config.comments = false
+
 filter :nome
 
 index do

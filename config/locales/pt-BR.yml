@@ -131,6 +131,15 @@ pt-BR:
       create: Criar %{model}
       submit: Salvar %{model}
       update: Atualizar %{model}
+  formtastic:
+    yes: Sim
+    no: Não
+    create: Criar %{model}
+    update: Atualizar %{model}
+    submit: Enviar %{model}
+    cancel: Cancelar %{model}
+    reset: Resetar %{model}
+    required: requerido
   number:
     currency:
       format:

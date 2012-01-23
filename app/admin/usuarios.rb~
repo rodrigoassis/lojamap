@@ -1,5 +1,7 @@
 ActiveAdmin.register Usuario do
 
+menu :label => "Usuários"
+
 filter :email
 
 index do

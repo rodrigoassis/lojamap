@@ -2,6 +2,8 @@ ActiveAdmin.register Usuario do
 
 menu :label => "Usuários"
 
+config.comments = false
+
 filter :email
 
 index do

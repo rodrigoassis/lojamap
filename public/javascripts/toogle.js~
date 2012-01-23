@@ -1,0 +1,9 @@
+$(document).ready(function() {
+  $('#clipping_imagem_input').toggle($('#clipping_tipo').val() == "Matéria" || "Quem usa?");
+  $('#clipping_url_input').toggle($('#clipping_tipo').val() == "Vídeo");
+});
+
+$('#mapa_tipo').change(function() {
+    $('#mapa_origem_input').toggle("slow");
+	$('#mapa_anexo_input').toggle("slow");
+  });

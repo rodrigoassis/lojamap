@@ -87,6 +87,8 @@ ActiveAdmin.setup do |config|
   # Active Admin resources from here. 
   #
   # config.before_filter :do_something_awesome
+  
+  config.display_name_methods = [:nome, :name, :email, :to_s]
 
 
   # == Register Stylesheets & Javascripts
@@ -99,5 +101,5 @@ ActiveAdmin.setup do |config|
   #   config.register_stylesheet 'my_stylesheet.css'
   #
   # To load a javascript file:
-  #   config.register_javascript 'my_javascript.js'
+  config.register_javascript 'toggle.js'
 end

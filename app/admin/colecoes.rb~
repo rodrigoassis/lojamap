@@ -4,7 +4,7 @@ menu :label => "Coleções"
 
 filter :nome
 
-index :title => "Coleções" do
+index do
 	column :nome
 	default_actions
 end
