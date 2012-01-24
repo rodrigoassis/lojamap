@@ -7,5 +7,6 @@ has_attached_file :imagem,
 									:styles => { :original => "640x960>", :thumb => "245x245^" } 
                                
 validates_presence_of :nome, :categoria_id, :colecao_id
+validates_numericality_of :preco
 
 end

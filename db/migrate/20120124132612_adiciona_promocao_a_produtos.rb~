@@ -1,0 +1,9 @@
+class AdicionaPromocaoAProdutos < ActiveRecord::Migration
+  def self.up
+  	add_column :produtos, :promocao, :boolean, :default => false
+  	add_column :produtos, :preco_promocional, :decimal
+  end
+
+  def self.down
+  end
+end
