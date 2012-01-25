@@ -23,7 +23,7 @@ form :html => { :multipart => true } do |f|
 	f.inputs "Detalhes do Produto" do
 	  f.input :nome
     f.input :preco, :label => "Preço"
-    f.input :promocao, :label => "Promoção?", :as => :select, :include_blank => false, :collection => { 'Não' => false, 'Sim' => true}
+    f.input :promocao, :label => "Promoção?", :as => :select
     f.input :preco_promocional, :label => "Preço Promocional"
     f.input :categoria, :label_method => :nome
     f.input :colecao, :label => "Coleção", :label_method => :nome

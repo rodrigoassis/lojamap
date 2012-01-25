@@ -15,7 +15,7 @@ end
 
 gem "paperclip"
 
-gem 'activeadmin'
+gem 'activeadmin', '0.3.2'
 
 # Use unicorn as the web server
 # gem 'unicorn'

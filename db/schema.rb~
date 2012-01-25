@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(:version => 20120124132612) do
     t.integer  "imagem_file_size"
     t.datetime "imagem_updated_at"
     t.integer  "colecao_id"
-    t.boolean  "promocao", :default => false
+    t.boolean  "promocao",            :default => false
     t.decimal  "preco_promocional"
   end
 
