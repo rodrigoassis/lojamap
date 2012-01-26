@@ -1,0 +1,13 @@
+ActiveAdmin.register Conceito do
+
+filter :nome
+
+config.comments = false
+
+index do
+	column :nome
+	column :colecao
+	default_actions
+end
+  
+end

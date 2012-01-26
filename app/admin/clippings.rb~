@@ -13,7 +13,7 @@ end
 form :html => { :multipart => true } do |f|
 	f.inputs "Detalhes do Clipping" do
 	  f.input :descricao, :label => 'Descrição'
-    f.input :tipo, :as => :select, :collection => ['Matéria', 'Vídeo', 'Quem usa?'], :default_blank => false
+    f.input :tipo, :as => :select, :collection => ['Matéria', 'Vídeo', 'Quem usa?'], :include_blank => false
     f.input :url
     f.input :imagem
   end

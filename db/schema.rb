@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120124132612) do
+ActiveRecord::Schema.define(:version => 20120126140311) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -43,10 +43,19 @@ ActiveRecord::Schema.define(:version => 20120124132612) do
     t.string   "imagem_content_type"
     t.integer  "imagem_file_size"
     t.datetime "imagem_updated_at"
+    t.string   "legenda"
   end
 
   create_table "colecoes", :force => true do |t|
     t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "conceitos", :force => true do |t|
+    t.string   "nome"
+    t.string   "descricao"
+    t.integer  "colecao_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -63,7 +72,7 @@ ActiveRecord::Schema.define(:version => 20120124132612) do
     t.integer  "imagem_file_size"
     t.datetime "imagem_updated_at"
     t.integer  "colecao_id"
-    t.boolean  "promocao", :default => false
+    t.boolean  "promocao",            :default => false
     t.decimal  "preco_promocional"
   end
 

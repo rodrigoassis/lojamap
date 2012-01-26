@@ -27,6 +27,7 @@ form :html => { :multipart => true } do |f|
     f.input :preco_promocional, :label => "Preço Promocional"
     f.input :categoria, :label_method => :nome
     f.input :colecao, :label => "Coleção", :label_method => :nome
+    f.input :referencia, :label => "Referência"
     f.input :imagem
   end
   f.buttons

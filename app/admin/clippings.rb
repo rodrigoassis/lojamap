@@ -16,6 +16,7 @@ form :html => { :multipart => true } do |f|
     f.input :tipo, :as => :select, :collection => ['Matéria', 'Vídeo', 'Quem usa?'], :include_blank => false
     f.input :url
     f.input :imagem
+    f.input :legenda
   end
   f.buttons
 end
