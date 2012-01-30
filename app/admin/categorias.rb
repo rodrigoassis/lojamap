@@ -8,5 +8,5 @@ index do
 	column :nome
 	default_actions
 end
-  
+
 end
