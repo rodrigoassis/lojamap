@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120126140311) do
+ActiveRecord::Schema.define(:version => 20120131130905) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -58,6 +58,17 @@ ActiveRecord::Schema.define(:version => 20120126140311) do
     t.integer  "colecao_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "fotos", :force => true do |t|
+    t.string   "legenda"
+    t.integer  "conceito_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "arquivo_file_name"
+    t.string   "arquivo_content_type"
+    t.integer  "arquivo_file_size"
+    t.datetime "arquivo_updated_at"
   end
 
   create_table "produtos", :force => true do |t|

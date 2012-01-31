@@ -7,7 +7,7 @@ config.comments = false
 index do
 	column 'Imagem' do |produto|
 		image_tag produto.imagem.url(:thumb)
-		#image_tag produto.imagem.url, :size => '30x30'
+		#image_tag produto.imagem.url, :size => '100x100'
 	end
 	column :nome
 	column :preco

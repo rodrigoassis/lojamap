@@ -1,0 +1,12 @@
+<%= semantic_form_for [:admin, @conceito], :html => { :multipart => true } do |f| %>
+	<%= f.inputs "Detalhes do Conceito" do  %>
+		<%= f.input :nome %>
+		<%= f.input :colecao, :label => "Coleção", :label_method => :nome %>
+		<%= f.input :descricao, :label => "Descrição" %>
+	<%end%>
+	<%= f.has_many :fotos do |fm| %>
+		<%= fm.input :legenda %>
+		<%= fm.input :arquivo, :as => :file %>
+	<% end %>
+  <%= f.buttons :commit %>
+<% end %>
