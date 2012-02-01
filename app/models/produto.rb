@@ -2,6 +2,7 @@ class Produto < ActiveRecord::Base
 
 belongs_to :categoria
 belongs_to :colecao
+has_and_belongs_to_many :imagems
 
 has_attached_file :imagem,
 									:styles => { :original => "640x960>", :thumb => "100x100>" },
