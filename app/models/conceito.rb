@@ -5,6 +5,6 @@ has_many :fotos, :dependent => :destroy
 
 accepts_nested_attributes_for :fotos, :allow_destroy => true
 
-validates_presence_of :nome, :colecao_id, :fotos
+validates_presence_of :nome, :colecao_id
 
 end

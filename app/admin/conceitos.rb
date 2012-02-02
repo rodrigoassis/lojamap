@@ -5,9 +5,6 @@ filter :nome
 config.comments = false
 
 index do
-	column 'Fotos' do |conceito|
-		image_tag conceito.fotos[0].arquivo.url(:thumb)
-	end
 	column :nome
 	column :colecao
 	default_actions
@@ -21,16 +18,17 @@ form :html => { :multipart => true } do |f|
   end
 
   f.inputs "Fotos do Álbum" do
-  	if f.object.new_record?
-  		1.times {f.object.fotos.build}
-  	end
   	
     f.has_many :fotos do |j|
-    	j.form_buffers.last << "<img src='#{j.object.arquivo.url(:thumb) rescue nil}' style='margin:1em;' />".html_safe
-      j.input :legenda
-      j.input :arquivo, :as => :file
-      j.input :_destroy, :as => :boolean, :label => "Excluir Foto?"
-      	
+    	if j.object.new_record?
+    		j.input :arquivo, :as => :file
+  			j.input :legenda
+  		else
+  			j.form_buffers.last << "<img src='#{j.object.arquivo.url(:thumb) rescue nil}' style='margin:1em;' />".html_safe
+  			j.input :_destroy, :as => :boolean, :label => "Excluir Foto?"
+  			j.input :arquivo, :as => :file
+  			j.input :legenda
+  		end      	
     end
   end
 
