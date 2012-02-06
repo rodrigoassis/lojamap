@@ -1,0 +1,217 @@
+* {
+	margin:0; 
+	padding:0;
+}
+
+html { }
+
+body { 
+	font-size:13px; 
+	font-family:'Courier New', Courier, monospace; 
+	color:#292929; 
+	background: url('http://static.shopify.com/s/files/1/0061/9382/assets/background.jpg') repeat-x 0 0 #f6f5f0;
+}
+
+url('http://static.shopify.com/s/files/1/0061/9382/assets/background.jpg') repeat-x 0 0 #f6f5f0;}
+
+h1 { 
+	font-family: "pill-gothic-300mg-1","pill-gothic-300mg-2", Arial, Sans-Serif; 
+	color:#292929; 
+	font-weight:700; 
+	padding:0; 
+	margin:0; 
+	font-size:21px; 
+	letter-spacing: 1.3px; 
+	text-transform: uppercase;
+}
+
+
+h2,h3,h4,h5,h6 { 
+	font-family: "pill-gothic-300mg-1","pill-gothic-300mg-2", Arial, Sans-Serif; 
+	color:#292929; 
+	font-weight:700; 
+	padding:0; 
+	margin: 0; 
+	letter-spacing: 1.3px; 
+	text-transform: uppercase; 
+}
+
+a { color:#292929; text-decoration:none; }
+a:hover { color: #292929; text-decoration:none; }
+
+ol { padding:0 0 0 25px; margin:0 0 15px 0;}
+ul { padding:0 0 0 20px; margin:0 0 15px 0;}
+li { margin:0 0 6px 0;}
+
+#wrapper { 
+	width: 1060px; 
+	margin:auto;
+}
+
+#topbar { 
+	width: 1060px; 
+	background-color: #282828; 
+	height: 6px; 
+	margin-top: 0px; 
+	position: absolute; 
+	top: 0; 
+	z-index: 2999999;
+	background: url('http://static.shopify.com/s/files/1/0061/9382/assets/background2.jpg') repeat;
+}
+
+#header, #header-primary {
+  width: 1060px;  
+  position:relative; 
+  margin:0 0 30px 0; 
+  padding-top: 20px;
+}
+
+#header {  padding: 20px 0 20px 0;} 
+
+#header .logo { float: left;}
+
+#header .logo a {
+    width: 85px;
+    height: 80px;
+    display: block;
+    background: url('http://static.shopify.com/s/files/1/0061/9382/assets/logo_small.png') 5px 0 no-repeat;
+}
+
+#header .logo a * {  
+	display: none; 
+}
+
+#header ul.left-nav { 
+	float: left; 
+	padding-top: 50px; 
+}
+
+#header ul.right-nav { 
+	padding-top: 50px; 
+}
+
+#header ul.left-nav li, #header ul.right-nav li { 
+	color: #292929; 
+	font-weight: 700; 
+	text-transform: uppercase; 
+	font-family:"pill-gothic-300mg-1","pill-gothic-300mg-2", sans-serif; 
+	list-style:none; 
+	display:inline; 
+	padding: 0 25px 2px 35px; 
+	margin: 0 0 0 20px;
+}
+
+#header ul.primary-nav a { 
+	color:#292929; 
+}
+
+#header ul.left-nav a:hover, #header ul.right-nav a:hover { 
+	color:#292929; 
+	padding-bottom: 2px; 
+	border-bottom: 3px solid #6f94a7; 
+}
+
+#header ul { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#cartwrap { 
+	width: 1060px; 
+	height: 6px;  
+	margin-top: 0px; 
+	position: absolute; 
+	top: 5; 
+	z-index: 1999999; 
+}
+
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden; 
+}
+
+.content {  
+	margin:0px 0 30px 0; 
+	padding:0px;
+}
+
+.center-text { text-align:center; }
+
+#cart { 
+	position: absolute; 
+	margin-top: 0px; 
+	margin-left: 985px; 
+	padding-left: 2px; 
+	border: 0px solid #292929; 
+	width: 58px; 
+	height: 30px; 
+	-moz-border-radius: 0 0 30px 30px; 
+	border-radius: 0 0 30px 30px; 
+	text-align: center; 
+	padding-top: 9px; 
+	font-family: "pill-gothic-300mg-1","pill-gothic-300mg-2", Arial, sans-serif; 
+	border: 0px dotted #7096ab;  
+	border-top: none; 
+	z-index: 1999999;    
+	-moz-box-shadow:inset 0px -1px 1px 0 rgba(0,0,0,0.2); 
+	color: #3e3e3e;
+	-webkit-box-shadow:inset 0px -1px 1px 0 rgba(0,0,0,0.2);  
+	background-color: #f4f5f0;   
+}
+
+#cart:hover { 
+	color: #f6f5f0; 
+	background-color: #292929; 
+	border-color: #292929;  
+}
+
+#cart .cart-top {  
+	font-size: 12px; 
+	text-transform: uppercase; 
+	letter-spacing: 2.5px; 
+	font-weight: 700;  
+}
+#cart .cart-bottom {  }
+
+a.checkout:hover {  }
+
+a.checkout:after  {
+    content: " \2192 ";  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
