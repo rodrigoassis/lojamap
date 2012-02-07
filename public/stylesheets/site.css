@@ -49,7 +49,7 @@ li { margin:0 0 6px 0;}
 }
 
 #topbar { 
-	width: 1060px; 
+	width: 100%; 
 	background-color: #282828; 
 	height: 6px; 
 	margin-top: 0px; 
@@ -182,7 +182,71 @@ a.checkout:after  {
     content: " \2192 ";  
 }
 
+#footer { 
+	width: 960px; 
+	height: 100px; 
+	margin:0 auto 40px auto; 
+	padding:38px 60px 50px 60px; 
+	color: #292929;  
+	font-size:11px; 
+}
 
+#bottombar { 
+	width: 960px; 
+	background-color: #282828; 
+	height: 6px; 
+	margin-top: 0px; 
+	top: 0; 
+	z-index: 2999999;
+	background: url('http://static.shopify.com/s/files/1/0061/9382/assets/background2.jpg') repeat;
+}
+
+.div_footer {
+	width: 176px;
+	background-color: white;
+	border-right:1px solid #282828;
+	padding: 5px 10px 0 5px; 
+	height: 40px; 
+	margin-top: 0px; 
+	top: 0;
+	float: left;
+}
+
+.div_footer span {
+	vertical-align: middle;
+	position:relative; 
+	bottom: 30%;
+}
+
+#big-primary {  
+	width: 1060px; 
+	display: block; 
+	height: 614px; 
+	overflow: hidden; 
+	margin: 0 auto; 
+}
+
+#slide-nav {
+	position:absolute;
+	top:400px;
+  width: 1060px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	z-index:500;
+  color: #fff;
+}
+
+#slideshow, #slideshow2 {  
+	width: 960px;  
+	z-index: 20; 
+	border: 7px solid #fff; 
+	display: block; 
+	height: 600px; 
+	overflow: hidden;  
+	top: 0; 
+	margin:0 auto; 
+	padding:0;
+}
 
 
 
