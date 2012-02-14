@@ -7,5 +7,6 @@ ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.singular /^(ox)en/i, '\1'
     inflect.irregular 'colecao', 'colecoes'
     inflect.irregular 'categoria', 'categorias'
+    inflect.irregular 'imagem', 'imagens'
 #   inflect.uncountable %w( fish sheep )
  end

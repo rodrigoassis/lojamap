@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(:version => 20120201132805) do
     t.datetime "arquivo_updated_at"
   end
 
-  create_table "imagems", :force => true do |t|
+  create_table "imagens", :force => true do |t|
     t.string   "legenda"
     t.integer  "lookbook_id"
     t.datetime "created_at"
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(:version => 20120201132805) do
     t.datetime "arquivo_updated_at"
   end
 
-  create_table "imagems_produtos", :id => false, :force => true do |t|
+  create_table "imagens_produtos", :id => false, :force => true do |t|
     t.integer "imagem_id"
     t.integer "produto_id"
   end

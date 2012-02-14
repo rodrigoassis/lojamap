@@ -15,10 +15,10 @@ form :html => { :multipart => true } do |f|
 	  f.input :nome
     f.input :colecao, :label => "Coleção", :label_method => :nome
   end
-  
+
   f.inputs "Imagens do Lookbook" do
-  	
-    f.has_many :imagems do |j|
+
+    f.has_many :imagens do |j|
     	if j.object.new_record?
     		j.input :arquivo, :as => :file
   			j.input :legenda
@@ -31,8 +31,8 @@ form :html => { :multipart => true } do |f|
       j.input :produtos, :as => :check_boxes, :label_method => :nome
     end
   end
-  
+
   f.buttons
 end
-  
+
 end
