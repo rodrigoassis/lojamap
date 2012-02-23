@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Nome do Produto</th>
+		<th>Preço</th>
+	</tr>
+	<% @produtos.each do |produto| %>
+	<tr>
+		<td><%= produto.nome %></td>
+		<td><%= produto.preco %></td>
+		<td><%= button_to 'Adicionar ao Carrinho', { :controller => "itens", :action => "create", :produto_id => produto } %></td>
+	</tr>
+
+	<% end %>
+</table>

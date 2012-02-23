@@ -1,0 +1,10 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h2>Your Pragmatic Cart</h2>
+<ul>
+<% @cart.itens.each do |item| %>
+<li><%= item.produto.nome %> | <%= item.produto.preco %></li>
+<% end %>
+</ul>

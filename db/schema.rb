@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120201132805) do
+ActiveRecord::Schema.define(:version => 20120223122615) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -26,6 +26,11 @@ ActiveRecord::Schema.define(:version => 20120201132805) do
   add_index "active_admin_comments", ["author_type", "author_id"], :name => "index_active_admin_comments_on_author_type_and_author_id"
   add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
+
+  create_table "carts", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "categorias", :force => true do |t|
     t.string   "nome"
@@ -85,6 +90,13 @@ ActiveRecord::Schema.define(:version => 20120201132805) do
   create_table "imagens_produtos", :id => false, :force => true do |t|
     t.integer "imagem_id"
     t.integer "produto_id"
+  end
+
+  create_table "itens", :force => true do |t|
+    t.integer  "produto_id"
+    t.integer  "cart_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "lookbooks", :force => true do |t|
