@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120223122615) do
+ActiveRecord::Schema.define(:version => 20120223195233) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20120223122615) do
     t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "quantidade", :default => 1
   end
 
   create_table "lookbooks", :force => true do |t|
