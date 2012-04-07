@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{font:12px 'TeXGyreAdventorRegular',Verdana, Geneva, sans-serif;background:#e8e8e8;border-top:6px solid #4da8a3;}
+img{border:none;}
+.clear{clear:both;}
+#wrapper{width:948px;margin:0 auto;}

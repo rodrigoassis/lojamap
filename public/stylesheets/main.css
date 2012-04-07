@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+/* VERDE DO SITE - #4da8a3 **/
+@import url("fontface.css");
+@import url("pagina.css");
+@import url("topo.css");
+@import url("menu.css");
+@import url("conteudo.css");
+
+@import url("rodape.css");

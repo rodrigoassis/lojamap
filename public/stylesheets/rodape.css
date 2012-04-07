@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+#rodape{width:855px;background:#fff;margin:22px auto 30px;border-top:4px solid #4da8a3;}
+	#rodape ul{width:855px;margin:0 auto;list-style:none;}
+	#rodape ul li{float:left;}
+	#rodape ul li a{}

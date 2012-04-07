@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+#topo{width:948px;margin:0 auto;position:absolute;top:6px;z-index:9999;}
+	/* BOTOES */
+	#botaoSacola{width:68px;height:24px;position:absolute;right:0;border-bottom:2px solid #4da8a3;background:#fff url(../images/sacola.png) no-repeat 12px 4px;line-height:11px;font-size:10px;color:#8c8c8c;letter-spacing:1px;padding:2px 0 0 32px;text-align:center;}
+	#botaoLogin{width:60px;height:22px;position:absolute;right:100px;background:#4da8a3;color:#fff;text-align:center;padding-top:6px;}
+	#botaoLogin:hover,#botaoSacola:hover{cursor:pointer;}
+	/*** HOLDERS  ***/
+	#holderSacola{width:266px;background:#fff;display:none;float:right;position:relative;}
+		#holderSacola a{color:#fff;text-decoration:none;}
+	#holderLogin{width:160px;background:#fff;height:190px;/*overflow-y:hidden;*/display:none;float:right;position:relative;}/*height 190 */
+	#formLogin{width:134px;margin:0 auto;padding-top:20px;}
+	/****  FORM  ****/
+	#formLogin label{color:#8c8c8c;font-size:11px;}
+	#formLogin .campo{border:1px solid #e1e1e1;padding:3px;width:126px;margin-top:3px;color:#999;}
+	#formLogin .botao{width:134px;border:0;margin:14px 0;padding:2px 0;background:#4da8a3;color:#fff;}
+	#formLogin .botao:hover{background:#60C1BB;cursor:pointer;}
+	#formLogin a{font-size:11px;margin:10px 0 0 3px;text-decoration:none;color:#4da8a3;}
+	/******* TABELA SACOLA ********/
+	#tabelaSacola{font-size:14px;color:#868686;}
+		#tabelaSacola tr{}
+			#tabelaSacola td{border-bottom:1px solid #f0f0f0;text-align:center;padding:15px 0;line-height:16px;}
+			#tabelaSacola td.precoSacolaTopo{color:#4da8a3;}
+	#irSacola{width:254px;background:#4da8a3;padding:6px 0;margin:10px auto;text-align:center;}
+	#irSacola:hover{background:#60C1BB;}

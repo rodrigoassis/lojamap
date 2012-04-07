@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+#menuPrincipal{}
+	#menuPrincipal ul{text-transform:uppercase;font-size:13px;width:948px;text-align:center;margin-top:70px;list-style:none;}
+		#menuPrincipal ul li{float:left;text-align:center;width:132px;}
+			#menuPrincipal ul li.leftMap{text-align:left;}
+			#menuPrincipal ul li.rightMap{text-align:right;}
+			#menuPrincipal ul li.logoMap{margin-top:-8px;width:130px;margin-right:26px;}
+			#menuPrincipal ul li a{text-decoration:none;color:#808080;}
+			#menuPrincipal ul li a:hover{color:#333;}

@@ -2,67 +2,87 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-  <title>M.AP</title>
+  <title>MAP</title>
 
-  <link href="/stylesheets/site.css" rel="stylesheet" type="text/css"  media="all"  />
-  <%= javascript_include_tag :defaults %>
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css"  media="all"  />
+  <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
-
 </head>
 <body>
 
-<div id="topbar"></div>
-
 <div id="wrapper">
-	<div class="content clearfix">
+  	<div id="topo">
+    		<!----------------- FORM LOGIN --------------------->
+        	<div id="holderLogin">
+            	<form id="formLogin" action="#" method="post">
+                <label for="emailLogin">EMAIL</label>
+                <input type="email" name="emailLogin" id="emailLogin" class="campo" value="" /><!-- HTML5 TAG - IDENTIFICADA COMO TYPE TEXT NO INTERNET EXPLORER -->
+                <label for="senhalLogin">SENHA</label>
+                <input type="password" name="senhaLogin" id="senhaLogin" class="campo" value="" />
+                <input type="button" class="botao" name="botaoLoginEnter" id="botaoLoginEnter" value="ENTRAR" />
+                <a href="#">Não sou cadastrada(o)!</a>
+                </form>
+            </div>
+            <!---------------- SACOLA DE COMPRAS --------------->
+            <div id="holderSacola">
+            	<table id="tabelaSacola" border="0" padding="0" cellpadding="0" cellspacing="0">
+                	<tbody>
+                    	<tr>
+                        	<td style="width:66px;border-right:1px solid #f0f0f0;">QTD.</td>
+                            <td style="width:96px;border-right:1px solid #f0f0f0;">Produto</td>
+                            <td style="width:104px;">Preço (unid.)</td>
+                        </tr>
+                        <tr>
+                        	<td>2</td>
+                            <td>Camisa bacana e sinistra</td>
+                            <td class="precoSacolaTopo">R$ 10,00</td>
+                        </tr>
+                        <tr>
+                        	<td>1</td>
+                            <td>Short Jeans muito legal</td>
+                            <td class="precoSacolaTopo">R$ 65,00</td>
+                        </tr>
+                        <tr>
+                        	<td colspan="2" style="width:162px;text-align:right;border-right:1px solid #f0f0f0;">Preço total:&nbsp;&nbsp;</td>
+                            <td class="precoSacolaTopo">R$ 85,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">
+                	<div id="irSacola">Ir para a sacola</div>
+                </a>
+            </div>
+        	<div id="botaoLogin">LOGIN</div>
+        	<div id="botaoSacola">ITEMS<br />- 02 -</div>
+    </div>
+    <div id="menuPrincipal">
+    	<ul>
+        	<li class="leftMap"><a href="#">a marca</a></li>
+            <li class="leftMap"><a href="#">coleção</a></li>
+            <li class="leftMap"><a href="#">clipping</a></li>
+            <li class="logoMap"><a href="#"><img src="images/map.png" width="93" height="36" alt="M.AP" /></a></li>
+            <li class="rightMap"><a href="#">loja virtual</a></li>
+            <li class="rightMap"><a href="#">blog</a></li>
+            <li class="rightMap"><a href="#">contato</a></li>
 
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div id="conteudo">
+			<%= yield %>
+    </div>
+    <div class="clear"></div>
+    <div id="rodape">
+    	<ul>
+        	<li><a href="#"><img src="images/twitter_map.png" width="182" height="56" alt="twitter_map" /></a></li>
+            <li><a href="#"><img src="images/facebook_map.png" width="136" height="56" alt="facebook_map" /></a></li>
+            <li><a href="#"><img src="images/youtube_map.png" width="178" height="56" alt="youtube_map" /></a></li>
+            <li><a href="#"><img src="images/visita_map.png" width="201" height="56" alt="visita_map" /></a></li>
+            <li><a href="#"><img src="images/boo_studio.png" width="156" height="56" alt="boo_studio" /></a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+  </div>
 
-		<div id="header" class="clearfix">
-			<ul class="left-nav clearfix">
-				<li class="first"><a href="/amarca">A Marca</a></li>
-				<li><a href="/colecoes">Coleção</a></li>
-				<li><a href="/blogs/lifestyle">Clipping</a></li></li>
-			</ul>
-		  <div class="logo">
-			  <a href="/"></a>
-		  </div><!-- .logo -->
-		  <ul class="right-nav clearfix">
-		  	<li class="first"><a href="/produtos">Loja Virtual</a></li>
-		  	<li><a href="/pages/contact">Blog</a></li>
-		  	<li><a href="http://barnabyblack.com/" target="_blank">Contato</a></li>
-		  </ul>
-		</div><!-- #header -->
-	</div>
-
-</div>
-
-
-<div id="big-primary">
-<%= yield %>
-</div>
-
-<div id="footer">
-	<div id="bottombar"></div>
-	<div class="div_footer">
-		<img src="/images/youtube.png" alt="Youtube" />
-		<span>Siga-nos no twitter </span>
-	</div>
-	<div class="div_footer">
-		<img src="/images/youtube.png" alt="Youtube" />
-		<span>Siga-nos no twitter </span>
-	</div>
-	<div class="div_footer">
-		<img src="/images/youtube.png" alt="Youtube" />
-		<span>Siga-nos no twitter </span>
-	</div>
-	<div class="div_footer">
-		<img src="/images/youtube.png" alt="Youtube" />
-		<span>Siga-nos no twitter </span>
-	</div>
-	<div class="div_footer">
-		<img src="/images/youtube.png" alt="Youtube" />
-		<span>Siga-nos no twitter </span>
-	</div>
-</div>
-
+</body>
 </html>
