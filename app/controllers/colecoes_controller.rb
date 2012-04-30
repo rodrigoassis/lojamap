@@ -1,7 +1,7 @@
 class ColecoesController < ApplicationController
 
 	def index
-		@colecao = Colecao.all.last
+		@colecoes = Colecao.order('created_at desc').limit(2)
 	end
 
 end

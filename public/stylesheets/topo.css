@@ -21,6 +21,6 @@
 	#tabelaSacola{font-size:14px;color:#868686;}
 		#tabelaSacola tr{}
 			#tabelaSacola td{border-bottom:1px solid #f0f0f0;text-align:center;padding:15px 0;line-height:16px;}
-			#tabelaSacola td.precoSacolaTopo{color:#4da8a3;}
+				#tabelaSacola td.precoSacolaTopo{color:#4da8a3;}
 	#irSacola{width:254px;background:#4da8a3;padding:6px 0;margin:10px auto;text-align:center;}
 	#irSacola:hover{background:#60C1BB;}

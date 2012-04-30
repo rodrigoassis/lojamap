@@ -1,0 +1,66 @@
+<div id="materias">
+	<h1>Matérias</h1>
+  <div class="lineSep"></div>
+  <div class="setaMaterias setaEsquerdaMaterias" id="esqMaterias"></div>
+  <div id="holderMaterias">
+  	<div id="sliderMaterias">
+  		<% @clippings.materias.each do |materia|%>
+    		<div class="item">
+      	 	<div class="imagem">
+      	 		<%=image_tag materia.imagem.url, :height => 235%>
+          </div>
+          <div class="texto">
+      	   	<p><a href="#"><%=materia.created_at.strftime("%d/%m/%Y")%><br /><%=materia.legenda%></a></p>
+          </div>
+        </div>
+    	<% end %>
+      </div>
+    	<div class="clear"></div>
+    </div>
+    <div class="setaMaterias setaDireitaMaterias" id="dirMaterias"></div>
+    <div class="clear"></div>
+</div>
+<!-------------------------------------------vídeos----------------------------------------------------->
+<div id="videosClipping">
+	<h1>Vídeos</h1>
+    <div class="lineSep"></div>
+    <div class="setaVideosClipping setaEsquerdaVideosClipping" id="esqVideosClipping"></div>
+    <div id="holderVideosClipping">
+    	<div id="sliderVideosClipping">
+    		<% @clippings.videos.each do |video|%>
+					<div class="item">
+					 	<div class="imagem">
+					 		<img src="images/exemplo/imagem15.jpg" width="165" height="135" />
+						</div>
+						<div class="play"><%=link_to image_tag("play_video.png", :style => "margin-top:24px;margin-left:36px;", :width => 78, :height => 77), video.url, :rel => "shadowbox;width=600;height=450" %></div>
+					</div>
+				<% end %>
+        </div>
+    	<div class="clear"></div>
+    </div>
+    <div class="setaVideosClipping setaDireitaVideosClipping" id="dirVideosClipping"></div>
+     <div class="clear"></div>
+</div>
+<!-------------------------------------------QUEMUSA--------------------------------------------------->
+<div id="quemUsa">
+	<h1>Quem usa MAP</h1>
+    <div class="lineSep"></div>
+    <div class="setaQuemUsa setaEsquerdaQuemUsa" id="esqQuemUsa"></div>
+    <div id="holderQuemUsa">
+    	<div id="sliderQuemUsa">
+    		<% @clippings.quemUsa.each do |clipping|%>
+					<div class="item">
+              <div class="imagem">
+                 <%=image_tag clipping.imagem.url, :height => 235%>
+              </div>
+              <div class="texto">
+                  <p><a href="#"><%=clipping.legenda%></a></p>
+              </div>
+          </div>
+				<% end %>
+		  </div>
+    	<div class="clear"></div>
+    </div>
+    <div class="setaQuemUsa setaDireitaQuemUsa" id="dirQuemUsa"></div>
+     <div class="clear"></div>
+</div>

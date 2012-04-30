@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+.lineSep{width:867px;height:9px;background:url(../images/lineSep.png) no-repeat;margin:22px auto 10px;}
+/******** MATERIAS  *******/
+#materias{}
+  #materias h1{font-weight:normal;color:#8c8c8c;background:#e8e8e8;text-transform:uppercase;font-size:12px;text-align:center;}
+  #materias .setaMaterias{background:url(../images/setaColecao.png) no-repeat;width:13px;height:25px;float:left;margin-top:100px;}
+  #materias .setaMaterias:hover{cursor:pointer;}
+  #materias .setaEsquerdaMaterias{float:left;}
+  #materias .setaDireitaMaterias{background-position:0 -24px;float:right;}
+#holderMaterias{float:left;width:916px;margin-left:4px;height:235px;overflow:hidden;}
+	#sliderMaterias{width:10000px;height:235px;}
+	#sliderMaterias .item{width:165px;height:235px;background:#fff;float:left;margin-left:30px;margin-right:34px;position:relative;}
+	#sliderMaterias .imagem{width:165px;heigth:235px;overflow:hidden;position:absolute;}
+	#sliderMaterias .texto{width:157px;height:48px;background:#4da8a3;padding:4px;position:absolute;margin-top:180px;display:none;}
+	#sliderMaterias .texto p{margin-top:6px;}
+	#sliderMaterias .texto p a{color:#fff;text-decoration:none;}
+/******** QUEM USA  *******/
+#quemUsa{margin-top:80px;}
+  #quemUsa h1{font-weight:normal;color:#8c8c8c;background:#e8e8e8;text-transform:uppercase;font-size:12px;text-align:center;}
+  #quemUsa .setaQuemUsa{background:url(../images/setaColecao.png) no-repeat;width:13px;height:25px;float:left;margin-top:100px;}
+  #quemUsa .setaQuemUsa:hover{cursor:pointer;}
+  #quemUsa .setaEsquerdaQuemUsa{float:left;}
+  #quemUsa .setaDireitaQuemUsa{background-position:0 -24px;float:right;}
+#holderQuemUsa{float:left;width:916px;margin-left:4px;height:235px;overflow:hidden;}
+	#sliderQuemUsa{width:10000px;height:235px;}
+	#sliderQuemUsa .item{width:165px;height:235px;background:#fff;float:left;margin-left:30px;margin-right:34px;position:relative;}
+	#sliderQuemUsa .imagem{width:165px;heigth:235px;overflow:hidden;position:absolute;}
+	#sliderQuemUsa .texto{width:157px;height:48px;background:#4da8a3;padding:4px;position:absolute;margin-top:180px;display:none;}
+	#sliderQuemUsa .texto p{margin-top:6px;}
+	#sliderQuemUsa .texto p a{color:#fff;text-decoration:none;}
+/****** VIDEOS  *****/
+#videosClipping{margin-top:80px;}
+  #videosClipping h1{font-weight:normal;color:#8c8c8c;background:#e8e8e8;text-transform:uppercase;font-size:12px;text-align:center;}
+  #videosClipping .setaVideosClipping{background:url(../images/setaColecao.png) no-repeat;width:13px;height:25px;float:left;margin-top:54px;}
+  #videosClipping .setaVideosClipping:hover{cursor:pointer;}
+  #videosClipping .setaEsquerdaVideosClipping{float:left;}
+  #videosClipping .setaDireitaVideosClipping{background-position:0 -24px;float:right;}
+#holderVideosClipping{float:left;width:916px;margin-left:4px;height:132px;overflow:hidden;}
+	#sliderVideosClipping{width:10000px;height:132px;}
+	#sliderVideosClipping .item{width:165px;height:132px;background:#fff;float:left;margin-left:30px;margin-right:34px;position:relative;}
+	#sliderVideosClipping .imagem{width:165px;heigth:132px;overflow:hidden;position:absolute;}
+	#sliderVideosClipping .play{width:157px;height:132px;padding:4px;position:absolute;margin-top:0px;display:none;}

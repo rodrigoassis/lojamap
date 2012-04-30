@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+#holderColecao{width:948px;height:820px;}
+	#holderColecao .seta{background:url(../images/setaColecao.png) no-repeat;width:13px;height:25px;overflow:hidden;margin-top:390px;}
+	#holderColecao .seta:hover{cursor:pointer;}
+	#holderColecao .setaEsquerda{float:left;}
+	#holderColecao .setaDireita{float:right;background-position:0 -24px;}
+	#colecoes{float:left;width:856px;height:820px;margin-left:32px;}
+	  #colecoes .colecao{width:856px;height:410px;text-align:center;overflow:hidden;}
+	  #colecoes .colecao h1{font-size:15px;font-weight:normal;color:#8c8c8c;text-transform:uppercase;margin-bottom:20px;margin-left:-29px;}
+	  #colecoes .itemColecao{width:247px;height:323px;float:left;margin-right:57px;}
+	  #colecoes .itemColecao:hover{cursor:pointer;}
+	  #colecoes .holderImage{width:241px;height:303px;background:#fff;border:3px solid #fff;}
+	  #colecoes h2{font-weight:normal;color:#8c8c8c;background:#e8e8e8;text-transform:uppercase;font-size:12px;margin-top:6px;position:absolute;text-align:center;width:247px;}
+	  
+	  .hello{width:100px;height:100px;background:blue;position:absolute;top:0;left:0;display:none;}

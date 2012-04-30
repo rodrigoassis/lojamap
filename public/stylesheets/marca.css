@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+#marca{width:851px;margin:0 auto;}
+	#marca h1{color:#808080;font-size:15px;font-weight:normal;text-transform:uppercase;text-align:center;padding-right:29px;margin-top:30px;}
+	#marca .imagemMarca{width:851px;margin-top:20px;padding-bottom:3px;border-bottom:3px solid #4da8a3;}
+	#marca .texto{width:833px;background:#fff;padding:14px 9px 4px;margin-top:3px;}
+	  #marca .texto p{color:#b1b1b1;font-size:15px;text-align:justify;}
+		#marca .texto p.author{color:#4da8a3;text-align:right;padding-top:30px;}
