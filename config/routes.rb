@@ -55,6 +55,9 @@ Map::Application.routes.draw do
   root :to => "application#index"
   match 'marca' => 'application#marca'
 
+  match 'contato' => 'contato#index', :as => 'contato', :via => :get
+	match 'contato' => 'contato#enviar', :as => 'contato', :via => :post
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

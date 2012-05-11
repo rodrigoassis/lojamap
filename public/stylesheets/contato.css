@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+#contato{}
+#contato h1{font-weight:normal;color:#8c8c8c;background:#e8e8e8;text-transform:uppercase;font-size:15px;text-align:center;}
+#contato .linha{width:867px;height:9px;background:url(../images/lineSep.png) no-repeat;margin:10px auto 30px;}
+#holderContato{width:855px;margin:0 auto;}
+#holderFormulario{float:left;width:358px;}
+#formContato{}
+	#formContato input.campos,#formContato textarea{width:328px;background:#fff;border:0px;border-bottom:2px solid #4DA8A3;padding:15px 15px 11px;color:#838383;font-size:10px;text-transform:uppercase;margin-bottom:8px;}
+	#formContato textarea{font:11px 'TeXGyreAdventorRegular',Verdana, Geneva, sans-serif;resize:none;scroll:auto;height:157px;}
+	#receberNovidades{width:243px;height:13px;background:url(../images/newsBox.png) no-repeat;float:left;margin-top:10px;}
+		#formContato .desmarcado{background-position:0 0;}
+		#formContato .desmarcado:hover{cursor:pointer;background-position:0 -13px;}
+		#formContato .marcado{background-position:0 -26px;}
+		#formContato .marcado:hover{cursor:pointer;}
+		#formContato .botao{float:right;background:#4DA8A3;border:none;color:#fff;padding:8px 20px;text-transform:uppercase;}
+		#formContato .botao{cursor:pointer;}
+	#formContato label{color:#8c8c8c;float:left;font-size:12px;}
+#imagemContato{width:479px;float:right;}
+#imagemContato .holderImagemContato{width:467px;background:#fff;border:0px;border-bottom:2px solid #4DA8A3;padding:6px;}
+#imagemContato p{text-align:center;color:#fff;color:#8c8c8c;line-height:14px;font-size:11px;margin-top:8px;}
+#imagemContato p a{color:#4DA8A3;text-decoration:none;}
+

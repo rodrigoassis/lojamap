@@ -1,0 +1,27 @@
+<div id="contato">
+	<h1>contato</h1>
+  	<div class="linha"></div>
+    <div id="holderContato">
+    	<div id="holderFormulario">
+
+    	<% form_for @contato, :url => contato_path, :html => { :method => :post, :id => "formContato" }  do |f| %>
+    		<%= f.text_field :nomeContato, :class => 'campos', :name => "nomeContato", :id => "nomeContato", :value => "nome" %>
+    		<%= f.text_field :emailContato, :class => 'campos', :name => "emailContato", :id => "emailContato", :value => "email" %>
+    		<%= f.text_area :mensagemContato, :id => 'mensagemContato', :name => "mensagemContato", :value => 'mensagem' %>
+    		<div class="clear"></div>
+    		<div id="receberNovidades" class="desmarcado"></div>
+    		<%= f.check_box :newsContato, :name => "newsContato", :id => "newsContato", :style => "display:none;" %>
+    		<%= f.submit "Enviar", :class => 'botao', :id => 'botaoEnviar', :name => 'botaoEnviar' %>
+    		<div class="clear"></div>
+			<% end %>
+
+      </div>
+      <div id="imagemContato">
+      <div class="holderImagemContato">
+      	<img src="images/imagem_contato.jpg" width="467" height="269" alt="imagem_contato" />
+      </div>
+ 			<p>Atendemos com hora marcada. <a href="#">Agende uma visita.</a><br />Tel. (21) 2266-0011 - (21) 2930-2353</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

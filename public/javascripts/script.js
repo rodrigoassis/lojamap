@@ -7,6 +7,7 @@ $(document).ready(function(){
 	colecaoHover();
 	setaColecao();
 	clipping();
+	contato();
 });
 /********************** LOGIN - TOPO  ********************/
 function topLogin(){
@@ -287,4 +288,61 @@ function videosClipping(){
 			cliques3--;
 		}
 	});
+}
+function contato(){
+	 if($('#newsContato').is(':checked')){
+		var marcadoNews = 1;
+		$('#receberNovidades').removeClass('desmarcado').addClass('marcado');
+	}else{
+		var marcadoNews=0;
+		$('#receberNovidades').removeClass('marcado').addClass('desmarcado');	
+	}	
+	$('#receberNovidades').click(function(){
+		if(marcadoNews===1){
+		 $('#newsContato').attr('checked',false);
+		 $('#receberNovidades').removeClass('marcado').addClass('desmarcado');
+		 marcadoNews=0;
+		}else if(marcadoNews===0){
+			$('#newsContato').attr('checked',true);
+			$('#receberNovidades').removeClass('desmarcado').addClass('marcado');
+			marcadoNews=1;
+		}
+	});
+	$('#nomeContato').bind({
+		focusin: function(){
+			if($(this).val()==='nome'){
+				$(this).val('');	
+			}
+		},
+		focusout: function(){
+			if($(this).val()===''){
+				$(this).val('nome');	
+			}
+		}
+	});
+	$('#emailContato').bind({
+		focusin: function(){
+			if($(this).val()==='email'){
+				$(this).val('');	
+			}
+		},
+		focusout: function(){
+			if($(this).val()===''){
+				$(this).val('email');	
+			}
+		}
+	});
+	$('#mensagemContato').bind({
+		focusin: function(){
+			if($(this).val()==='mensagem'){
+				$(this).val('');	
+			}
+		},
+		focusout: function(){
+			if($(this).val()===''){
+				$(this).val('mensagem');	
+			}
+		}
+	});
+	
 }
